@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+    font-family: sans-serif;
+}
+body{
+    background: #F5F5F7;
+}
 
 .Navbar>li>a{
     color: #323232;
@@ -9,4 +15,23 @@
 }
 
 .Navbar>li{
+    @apply px-4 font-light;
+
 }
+
+.Navbar{
+    padding-top: 2px;
+    gap: 5px;
+}
+
+.dropdown>ul>li{
+    padding-bottom: 5px;
+    font-size: 28px;
+    @apply flex justify-between items-center;
+    cursor: pointer;
+}
+.dropdown>ul>li:hover .FaAngleRight{
+    display: block;
+}
+
+
