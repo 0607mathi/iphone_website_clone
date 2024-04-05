@@ -13,7 +13,7 @@ const Sm_navbar = () => {
   }, [])
   return (
     <div>
-      <div className='flex items-center py-1 pt-2 mx-1 lg:hidden w-full fixed top-0'>
+      <div className='flex items-center py-1 pt-2 mx-1 lg:hidden w-full fixed top-0 bg-white'>
       { !toggleMenu &&  <a href="#"><img src={Apple_logo} className='w-14' alt="" /></a> }
         <ul className='flex gap-7 ml-auto pr-3'>
         { !toggleMenu &&  <li><a href="#" ><AiOutlineSearch size={20}/></a></li>}
@@ -21,7 +21,7 @@ const Sm_navbar = () => {
             <li><button onClick={()=> setToggleMenu(!toggleMenu)}><AiOutlineMenu size={20}/></button></li>
         </ul>
       </div>
-      { toggleMenu && <div className="dropdown  w-full bg-white mt-12 block lg:hidden h-screen" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+      { toggleMenu && <div className="dropdown  w-full bg-white mt-9 block lg:hidden h-screen" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
         <ul className='mx-12 font-bold mt-1'>
                 <li><a href="#">Store</a><FaAngleRight className='hidden FaAngleRight' /></li>
                 <li><a href="#">Mac</a><FaAngleRight className='hidden FaAngleRight' /></li>

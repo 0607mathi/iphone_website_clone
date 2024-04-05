@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *{
     font-family: sans-serif;
 }
+
 body{
     background: #F5F5F7;
 }
@@ -11,17 +13,16 @@ body{
 .Navbar>li>a{
     color: #323232;
     font-size: 12px;
-    font-weight: 600;
 }
 
 .Navbar>li{
     @apply px-4 font-light;
-
+    font-weight: 500;
 }
 
 .Navbar{
     padding-top: 2px;
-    gap: 5px;
+    gap: 7px;
 }
 
 .dropdown>ul>li{
@@ -30,8 +31,11 @@ body{
     @apply flex justify-between items-center;
     cursor: pointer;
 }
+
 .dropdown>ul>li:hover .FaAngleRight{
     display: block;
 }
 
-
+.iphones{
+    font-size: 12px;
+}
